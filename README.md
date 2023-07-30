@@ -1,5 +1,5 @@
 # 12 Buggy Report in 100 Snippets
-## 1. leaky:JDBCConnection
+## 1. leaky: dogfight_Z.dogLog.utils.JDBCConnection
 + [repository](https://github.com/PointRider/open-java)
 + [PR](https://github.com/PointRider/open-java/pull/2/commits/601f2e8a6a007b1fd575137423686fab82bec838)
 + file :dogfightZ/src/dogfight_Z/dogLog/dao/DBInit.java
@@ -23,7 +23,7 @@
     }
   ```
 
-## 2. leaky:URLClassLoader
+## 2. leaky: java.net.URLClassLoader
 + [repository](https://github.com/Drun1baby/JavaSecurityLearning)
 + [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/fdce70c7848a8919dcdb893b55f5fb9a28e24741)
 + file :JavaSecurity/Reappearance/Serialable/src/DynamicClassLoader/URLClassLoader/JarRce.java
@@ -35,7 +35,7 @@
 
     }
   ```
-## 3. leaky:Scanner
+## 3. leaky: java.util.Scanner
 + [repository](https://github.com/sumeet-malik/level2and3)
 + [PR](https://github.com/sumeet-malik/level2and3/pull/3/commits/ec1c5b365f70116b2562853285bb3d5876eb4fe4)
 + file :Aug23/Codes/dp/Fib.java
@@ -52,7 +52,7 @@
 	}
   ```
 
-## 4. leaky:PrintWriter
+## 4. leaky: java.io.PrintWriter
 + [repository](https://github.com/Drun1baby/JavaSecurityLearning)
 + [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/7726285850e5e7d2670736fd1b0ec07a4a92b19c)
 + file :JavaSecurity/Reappearance/Serialable/src/DynamicClassLoader/URLClassLoader/JarRce.java
@@ -66,7 +66,7 @@
         out.println("</body></html>");
     }
   ```
-## 5. leaky:Scanner
+## 5. leaky: java.util.Scanner
 + [repository](https://github.com/CodinGame/SpringChallenge2022)
 + [PR](https://github.com/CodinGame/SpringChallenge2022/pull/29/commits/3a4fddfdcbb7d15464b81620a72c64bf4b5908a0)
 + file :starterAIs/Starter.java
@@ -136,7 +136,7 @@
     }
   ```
 
-## 6. leaky:Statement
+## 6. leaky: java.sql.Statement
 + [repository](https://github.com/Drun1baby/JavaSecurityLearning)
 + [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/866739eed18c74c7d04d4aac83f6650c0fdeda8d)
 + file :JavaSecurity/CodeReview/JavaSec-Code/MybatiSqli/src/main/java/com/drunkbaby/controller/SQLI.java
@@ -178,7 +178,7 @@
         return result.toString();
     }
   ```
-## 7. leaky:PreparedStatement
+## 7. leaky: java.sql.PreparedStatement
 + [repository](https://github.com/Drun1baby/JavaSecurityLearning)
 + [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e86f052d9ce68069c3e91f9ec043352efe71167e)
 + file :JavaSecurity/CodeReview/JavaSec-Code/MybatiSqli/src/main/java/com/drunkbaby/controller/SQLI.java
@@ -223,7 +223,7 @@
     }
   ```
   
-## 8. leaky:Scanner
+## 8. leaky: java.util.Scanner
 + [repository](https://github.com/CodinGame/SpringChallenge2022)
 + [PR](https://github.com/CodinGame/SpringChallenge2022/commit/3e9ed49e82737574d94451673c5f932f67f41fea)
 + file :config/level2/Boss.java
@@ -320,7 +320,7 @@
         }
     }
   ```
-## 9. leaky: CloseableHttpClient  BufferedReader 
+## 9. leaky: org.apache.http.impl.client.CloseableHttpClient;  java.io.BufferedReader 
 + [repository](https://github.com/Drun1baby/JavaSecurityLearning)
 + [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e9f231313247bb61fe544b8863b6da24ea95b23e)
 + file :JavaSecurity/CodeReview/JavaSec-Code/SSRF/src/main/java/com/drunkbaby/util/HttpUtils.java
@@ -351,7 +351,7 @@
 
   ```
 
-## 10. leaky:InMemoryDirectoryServer
+## 10. leaky: com.unboundid.ldap.listener.InMemoryDirectoryServer
 + [repository](https://github.com/Drun1baby/JavaSecurityLearning)
 + [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/04d35eea5d683ff3302af9819f66d9fa5f87eb23)
 + file :JavaSecurity/jndi/JndiCode/JndiRMIServer/src/main/java/JNDIGadgetServer.java
@@ -382,7 +382,7 @@
   ```
 
 
-## 11. leaky:Socket
+## 11. leaky: java.net.Socket
 + [repository](https://github.com/apache/doris-manager)
 + [PR](https://github.com/apache/doris-manager/pull/69/commits/90692505ab5775b9fb1c37c299e58d834623b781)
 + file :manager/dm-server/src/main/java/org/apache/doris/stack/util/TelnetUtil.java
@@ -409,7 +409,7 @@
         return isConnected;
     }
   ```
-## 12. leaky:BufferedReader
+## 12. leaky: java.io.BufferedReader
 + [repository](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures)
 + [PR](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures/pull/1/commits/6d339a4e3c58e0299a0d77d97ee198c2ea7b3cb9)
 + file :/JDBCFactory.java
