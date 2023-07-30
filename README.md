@@ -1,8 +1,19 @@
-# 12 Buggy Report in 100 Snippets
-## 1. leaky: dogfight_Z.dogLog.utils.JDBCConnection
-+ [repository](https://github.com/PointRider/open-java)
-+ [PR](https://github.com/PointRider/open-java/pull/2/commits/601f2e8a6a007b1fd575137423686fab82bec838)
-+ file :dogfightZ/src/dogfight_Z/dogLog/dao/DBInit.java
+# Replication Package of *InferROI*
+
+
+
+
+## RQ3: Open-Source Project Scanning
+We crawl 115 Java open-source projects with more than 50 stars, which are created after December 31, 2021. The date filtering condition is used to avoid the projects are included in the training data of the employed LLM gpt-4, which is trained using huge amount data up to September, 2021. To save time and the cost of calling the [gpt-4 API](https://platform.openai.com/docs/api-reference), we randomly filter 100 methods from these projects for this evalution, by matching 20 common resource terms, instead of completely scaning these projects. The employed terms are listed as follows: *stream*, *reader*, *client*, *writer*, *lock*, *player, *connection, *monitor, *gzip*, *ftp*, *semaphore*, *mutex*, *stream*, *camera*, *jar*, *buffer*, *latch*, *socket*, *database*, *scanner*, *cursor*.
+
+In the 100 methods, *Infer* reports 16 resource leaks and 12 are annotated as true bugs. We submit PRs for these ture bugs, and 3 of them are confirmed by the project developers and the PRs are accepted.
+
+The details of the 12 bugs are as follows:
+
+### \#1. Resource Type: dogfight_Z.dogLog.utils.JDBCConnection
++ Repo: [https://github.com/PointRider/open-java](https://github.com/PointRider/open-java)
++ PR: [https://github.com/PointRider/open-java/pull/2/commits/601f2e8a6a007b1fd575137423686fab82bec838](https://github.com/PointRider/open-java/pull/2/commits/601f2e8a6a007b1fd575137423686fab82bec838)
++ File: dogfightZ/src/dogfight_Z/dogLog/dao/DBInit.java
   ```java
   public static void initDB() {
         JDBCConnection conn = JDBCFactory.takeJDBC();
@@ -23,10 +34,10 @@
     }
   ```
 
-## 2. leaky: java.net.URLClassLoader
-+ [repository](https://github.com/Drun1baby/JavaSecurityLearning)
-+ [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/fdce70c7848a8919dcdb893b55f5fb9a28e24741)
-+ file :JavaSecurity/Reappearance/Serialable/src/DynamicClassLoader/URLClassLoader/JarRce.java
+### \#2. Resource Type: java.net.URLClassLoader
++ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/fdce70c7848a8919dcdb893b55f5fb9a28e24741](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/fdce70c7848a8919dcdb893b55f5fb9a28e24741)
++ File: JavaSecurity/Reappearance/Serialable/src/DynamicClassLoader/URLClassLoader/JarRce.java
   ```java
       public static void main(String[] args) throws Exception{
         URLClassLoader urlClassLoader = new URLClassLoader(new URL[]{new URL("jar:file:///E:\\Calc.jar!/")});
@@ -35,10 +46,11 @@
 
     }
   ```
-## 3. leaky: java.util.Scanner
-+ [repository](https://github.com/sumeet-malik/level2and3)
-+ [PR](https://github.com/sumeet-malik/level2and3/pull/3/commits/ec1c5b365f70116b2562853285bb3d5876eb4fe4)
-+ file :Aug23/Codes/dp/Fib.java
+  
+### \#3. Resource Type: java.util.Scanner
++ Repo: [https://github.com/sumeet-malik/level2and3](https://github.com/sumeet-malik/level2and3)
++ PR: [https://github.com/sumeet-malik/level2and3/pull/3/commits/ec1c5b365f70116b2562853285bb3d5876eb4fe4](https://github.com/sumeet-malik/level2and3/pull/3/commits/ec1c5b365f70116b2562853285bb3d5876eb4fe4)
++ File: Aug23/Codes/dp/Fib.java
   ```java
   public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -52,10 +64,10 @@
 	}
   ```
 
-## 4. leaky: java.io.PrintWriter
-+ [repository](https://github.com/Drun1baby/JavaSecurityLearning)
-+ [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/7726285850e5e7d2670736fd1b0ec07a4a92b19c)
-+ file :JavaSecurity/Reappearance/Serialable/src/DynamicClassLoader/URLClassLoader/JarRce.java
+### \#4. Resource Type: java.io.PrintWriter
++ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/7726285850e5e7d2670736fd1b0ec07a4a92b19c](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/7726285850e5e7d2670736fd1b0ec07a4a92b19c)
++ File: JavaSecurity/Reappearance/Serialable/src/DynamicClassLoader/URLClassLoader/JarRce.java
   ```java
      public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
@@ -66,10 +78,10 @@
         out.println("</body></html>");
     }
   ```
-## 5. leaky: java.util.Scanner
-+ [repository](https://github.com/CodinGame/SpringChallenge2022)
-+ [PR](https://github.com/CodinGame/SpringChallenge2022/pull/29/commits/3a4fddfdcbb7d15464b81620a72c64bf4b5908a0)
-+ file :starterAIs/Starter.java
+### \#5. Resource Type: java.util.Scanner
++ Repo: [https://github.com/CodinGame/SpringChallenge2022](https://github.com/CodinGame/SpringChallenge2022)
++ PR: [https://github.com/CodinGame/SpringChallenge2022/pull/29/commits/3a4fddfdcbb7d15464b81620a72c64bf4b5908a0](https://github.com/CodinGame/SpringChallenge2022/pull/29/commits/3a4fddfdcbb7d15464b81620a72c64bf4b5908a0)
++ File: starterAIs/Starter.java
   ```java
      public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
@@ -136,10 +148,10 @@
     }
   ```
 
-## 6. leaky: java.sql.Statement
-+ [repository](https://github.com/Drun1baby/JavaSecurityLearning)
-+ [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/866739eed18c74c7d04d4aac83f6650c0fdeda8d)
-+ file :JavaSecurity/CodeReview/JavaSec-Code/MybatiSqli/src/main/java/com/drunkbaby/controller/SQLI.java
+### \#6. Resource Type: java.sql.Statement
++ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/866739eed18c74c7d04d4aac83f6650c0fdeda8d](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/866739eed18c74c7d04d4aac83f6650c0fdeda8d)
++ File: JavaSecurity/CodeReview/JavaSec-Code/MybatiSqli/src/main/java/com/drunkbaby/controller/SQLI.java
   ```java
    @RequestMapping("/jdbc/vuln")
     public String jdbc_sqli_vul(@RequestParam("username") String username) {
@@ -178,10 +190,10 @@
         return result.toString();
     }
   ```
-## 7. leaky: java.sql.PreparedStatement
-+ [repository](https://github.com/Drun1baby/JavaSecurityLearning)
-+ [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e86f052d9ce68069c3e91f9ec043352efe71167e)
-+ file :JavaSecurity/CodeReview/JavaSec-Code/MybatiSqli/src/main/java/com/drunkbaby/controller/SQLI.java
+### \#7. Resource Type: java.sql.PreparedStatement
++ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e86f052d9ce68069c3e91f9ec043352efe71167e](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e86f052d9ce68069c3e91f9ec043352efe71167e)
++ File: JavaSecurity/CodeReview/JavaSec-Code/MybatiSqli/src/main/java/com/drunkbaby/controller/SQLI.java
   ```java
   @RequestMapping("/jdbc/sec")
     public String jdbc_sqli_sec(@RequestParam("username") String username) {
@@ -223,10 +235,10 @@
     }
   ```
   
-## 8. leaky: java.util.Scanner
-+ [repository](https://github.com/CodinGame/SpringChallenge2022)
-+ [PR](https://github.com/CodinGame/SpringChallenge2022/commit/3e9ed49e82737574d94451673c5f932f67f41fea)
-+ file :config/level2/Boss.java
+### \#8. Resource Type: java.util.Scanner
++ Repo: [https://github.com/CodinGame/SpringChallenge2022](https://github.com/CodinGame/SpringChallenge2022)
++ PR: [https://github.com/CodinGame/SpringChallenge2022/commit/3e9ed49e82737574d94451673c5f932f67f41fea](https://github.com/CodinGame/SpringChallenge2022/commit/3e9ed49e82737574d94451673c5f932f67f41fea)
++ File: config/level2/Boss.java
   ```java
       public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
@@ -320,10 +332,10 @@
         }
     }
   ```
-## 9. leaky: org.apache.http.impl.client.CloseableHttpClient;  java.io.BufferedReader 
-+ [repository](https://github.com/Drun1baby/JavaSecurityLearning)
-+ [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e9f231313247bb61fe544b8863b6da24ea95b23e)
-+ file :JavaSecurity/CodeReview/JavaSec-Code/SSRF/src/main/java/com/drunkbaby/util/HttpUtils.java
+### \#9. Resource Type: org.apache.http.impl.client.CloseableHttpClient;  java.io.BufferedReader 
++ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e9f231313247bb61fe544b8863b6da24ea95b23e](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e9f231313247bb61fe544b8863b6da24ea95b23e)
++ File: JavaSecurity/CodeReview/JavaSec-Code/SSRF/src/main/java/com/drunkbaby/util/HttpUtils.java
   ```java
       public static String httpClient(String url) {
 
@@ -351,10 +363,10 @@
 
   ```
 
-## 10. leaky: com.unboundid.ldap.listener.InMemoryDirectoryServer
-+ [repository](https://github.com/Drun1baby/JavaSecurityLearning)
-+ [PR](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/04d35eea5d683ff3302af9819f66d9fa5f87eb23)
-+ file :JavaSecurity/jndi/JndiCode/JndiRMIServer/src/main/java/JNDIGadgetServer.java
+### \#10. Resource Type: com.unboundid.ldap.listener.InMemoryDirectoryServer
++ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/04d35eea5d683ff3302af9819f66d9fa5f87eb23](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/04d35eea5d683ff3302af9819f66d9fa5f87eb23)
++ File: JavaSecurity/jndi/JndiCode/JndiRMIServer/src/main/java/JNDIGadgetServer.java
   ```java
      public static void main (String[] args) {
         String url = "http://127.0.0.1:7777/#JndiCalc";
@@ -382,10 +394,10 @@
   ```
 
 
-## 11. leaky: java.net.Socket
-+ [repository](https://github.com/apache/doris-manager)
-+ [PR](https://github.com/apache/doris-manager/pull/69/commits/90692505ab5775b9fb1c37c299e58d834623b781)
-+ file :manager/dm-server/src/main/java/org/apache/doris/stack/util/TelnetUtil.java
+### \#11. Resource Type: java.net.Socket
++ Repo: [https://github.com/apache/doris-manager](https://github.com/apache/doris-manager)
++ PR: [https://github.com/apache/doris-manager/pull/69/commits/90692505ab5775b9fb1c37c299e58d834623b781](https://github.com/apache/doris-manager/pull/69/commits/90692505ab5775b9fb1c37c299e58d834623b781)
++ File: manager/dm-server/src/main/java/org/apache/doris/stack/util/TelnetUtil.java
   ```java
       public static boolean telnet(String host, int port) {
         Socket socket = new Socket();
@@ -409,10 +421,10 @@
         return isConnected;
     }
   ```
-## 12. leaky: java.io.BufferedReader
-+ [repository](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures)
-+ [PR](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures/pull/1/commits/6d339a4e3c58e0299a0d77d97ee198c2ea7b3cb9)
-+ file :/JDBCFactory.java
+### \#12. Resource Type: java.io.BufferedReader
++ Repo: [https://github.com/leoshuncheng/vldbj-trajectory-distance-measures](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures)
++ PR: [https://github.com/leoshuncheng/vldbj-trajectory-distance-measures/pull/1/commits/6d339a4e3c58e0299a0d77d97ee198c2ea7b3cb9](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures/pull/1/commits/6d339a4e3c58e0299a0d77d97ee198c2ea7b3cb9)
++ File: /JDBCFactory.java
 
   ```java
   public static ArrayList<Trajectory> readOriginalTrajectoriesFromGeolife() {
