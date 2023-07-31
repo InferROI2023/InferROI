@@ -35,7 +35,7 @@ The details of the 12 bugs are as follows:
     }
   ```
 
-### Bug\#2
+### Bug\#2 (PR was accepted)
 + Resource Type: java.net.URLClassLoader
 + Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
 + Pull Request: [pull\#3](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/fdce70c7848a8919dcdb893b55f5fb9a28e24741)
@@ -67,7 +67,7 @@ The details of the 12 bugs are as follows:
 	}
   ```
 
-### Bug\#4
+### Bug\#4 (PR was accepted)
 + Resource Type: java.io.PrintWriter
 + Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
 + Pull Request: [pull\#3](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/7726285850e5e7d2670736fd1b0ec07a4a92b19c)
@@ -196,6 +196,7 @@ The details of the 12 bugs are as follows:
         return result.toString();
     }
   ```
+
 ### Bug\#7
 + Resource Type: java.sql.PreparedStatement
 + Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
@@ -245,7 +246,7 @@ The details of the 12 bugs are as follows:
 ### Bug\#8
 + Resource Type: java.util.Scanner
 + Repository: [SpringChallenge2022](https://github.com/CodinGame/SpringChallenge2022)
-+ Pull Request: [3e9ed49e82737574d94451673c5f932f67f41fea](https://github.com/CodinGame/SpringChallenge2022/commit/3e9ed49e82737574d94451673c5f932f67f41fea)
++ Pull Request: [pull\#29](https://github.com/CodinGame/SpringChallenge2022/pull/29/commits/3a4fddfdcbb7d15464b81620a72c64bf4b5908a0)
 + File: config/level2/Boss.java
   ```java
       public static void main(String args[]) {
@@ -372,7 +373,7 @@ The details of the 12 bugs are as follows:
 
   ```
 
-### Bug\#10
+### Bug\#10 (PR was accepted)
 + Resource Type: com.unboundid.ldap.listener.InMemoryDirectoryServer
 + Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
 + Pull Request: [pull\#3](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/04d35eea5d683ff3302af9819f66d9fa5f87eb23)
