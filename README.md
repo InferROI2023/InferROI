@@ -10,9 +10,10 @@ In the 100 methods, *Infer* reports 16 resource leaks and 12 are annotated as tr
 
 The details of the 12 bugs are as follows:
 
-### \#1. Resource Type: dogfight_Z.dogLog.utils.JDBCConnection
-+ Repo: [https://github.com/PointRider/open-java](https://github.com/PointRider/open-java)
-+ PR: [https://github.com/PointRider/open-java/pull/2/commits/601f2e8a6a007b1fd575137423686fab82bec838](https://github.com/PointRider/open-java/pull/2/commits/601f2e8a6a007b1fd575137423686fab82bec838)
+### Bug\#1
++ Resource Type: dogfight_Z.dogLog.utils.JDBCConnection
++ Repository: [open-java](https://github.com/PointRider/open-java)
++ Pull Request: [pull\#2](https://github.com/PointRider/open-java/pull/2/commits/601f2e8a6a007b1fd575137423686fab82bec838)
 + File: dogfightZ/src/dogfight_Z/dogLog/dao/DBInit.java
   ```java
   public static void initDB() {
@@ -34,9 +35,10 @@ The details of the 12 bugs are as follows:
     }
   ```
 
-### \#2. Resource Type: java.net.URLClassLoader
-+ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
-+ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/fdce70c7848a8919dcdb893b55f5fb9a28e24741](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/fdce70c7848a8919dcdb893b55f5fb9a28e24741)
+### Bug\#2
++ Resource Type: java.net.URLClassLoader
++ Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ Pull Request: [pull\#3](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/fdce70c7848a8919dcdb893b55f5fb9a28e24741)
 + File: JavaSecurity/Reappearance/Serialable/src/DynamicClassLoader/URLClassLoader/JarRce.java
   ```java
       public static void main(String[] args) throws Exception{
@@ -47,9 +49,10 @@ The details of the 12 bugs are as follows:
     }
   ```
   
-### \#3. Resource Type: java.util.Scanner
-+ Repo: [https://github.com/sumeet-malik/level2and3](https://github.com/sumeet-malik/level2and3)
-+ PR: [https://github.com/sumeet-malik/level2and3/pull/3/commits/ec1c5b365f70116b2562853285bb3d5876eb4fe4](https://github.com/sumeet-malik/level2and3/pull/3/commits/ec1c5b365f70116b2562853285bb3d5876eb4fe4)
+### Bug\#3
++ Resource Type: java.util.Scanner
++ Repository: [level2and3](https://github.com/sumeet-malik/level2and3)
++ Pull Request: [pull\#3](https://github.com/sumeet-malik/level2and3/pull/3/commits/ec1c5b365f70116b2562853285bb3d5876eb4fe4)
 + File: Aug23/Codes/dp/Fib.java
   ```java
   public static void main(String[] args) {
@@ -64,9 +67,10 @@ The details of the 12 bugs are as follows:
 	}
   ```
 
-### \#4. Resource Type: java.io.PrintWriter
-+ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
-+ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/7726285850e5e7d2670736fd1b0ec07a4a92b19c](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/7726285850e5e7d2670736fd1b0ec07a4a92b19c)
+### Bug\#4
++ Resource Type: java.io.PrintWriter
++ Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ Pull Request: [pull\#3](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/7726285850e5e7d2670736fd1b0ec07a4a92b19c)
 + File: JavaSecurity/Reappearance/Serialable/src/DynamicClassLoader/URLClassLoader/JarRce.java
   ```java
      public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -78,9 +82,10 @@ The details of the 12 bugs are as follows:
         out.println("</body></html>");
     }
   ```
-### \#5. Resource Type: java.util.Scanner
-+ Repo: [https://github.com/CodinGame/SpringChallenge2022](https://github.com/CodinGame/SpringChallenge2022)
-+ PR: [https://github.com/CodinGame/SpringChallenge2022/pull/29/commits/3a4fddfdcbb7d15464b81620a72c64bf4b5908a0](https://github.com/CodinGame/SpringChallenge2022/pull/29/commits/3a4fddfdcbb7d15464b81620a72c64bf4b5908a0)
+### Bug\#5
++ Resource Type: java.util.Scanner
++ Repository: [SpringChallenge2022](https://github.com/CodinGame/SpringChallenge2022)
++ Pull Request: [pull\#29](https://github.com/CodinGame/SpringChallenge2022/pull/29/commits/3a4fddfdcbb7d15464b81620a72c64bf4b5908a0)
 + File: starterAIs/Starter.java
   ```java
      public static void main(String args[]) {
@@ -148,9 +153,10 @@ The details of the 12 bugs are as follows:
     }
   ```
 
-### \#6. Resource Type: java.sql.Statement
-+ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
-+ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/866739eed18c74c7d04d4aac83f6650c0fdeda8d](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/866739eed18c74c7d04d4aac83f6650c0fdeda8d)
+### Bug\#6
++ Resource Type: java.sql.Statement
++ Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ Pull Request: [pull\#4](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/866739eed18c74c7d04d4aac83f6650c0fdeda8d)
 + File: JavaSecurity/CodeReview/JavaSec-Code/MybatiSqli/src/main/java/com/drunkbaby/controller/SQLI.java
   ```java
    @RequestMapping("/jdbc/vuln")
@@ -190,9 +196,10 @@ The details of the 12 bugs are as follows:
         return result.toString();
     }
   ```
-### \#7. Resource Type: java.sql.PreparedStatement
-+ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
-+ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e86f052d9ce68069c3e91f9ec043352efe71167e](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e86f052d9ce68069c3e91f9ec043352efe71167e)
+### Bug\#7
++ Resource Type: java.sql.PreparedStatement
++ Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ Pull Request: [pull\#4](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e86f052d9ce68069c3e91f9ec043352efe71167e)
 + File: JavaSecurity/CodeReview/JavaSec-Code/MybatiSqli/src/main/java/com/drunkbaby/controller/SQLI.java
   ```java
   @RequestMapping("/jdbc/sec")
@@ -235,9 +242,10 @@ The details of the 12 bugs are as follows:
     }
   ```
   
-### \#8. Resource Type: java.util.Scanner
-+ Repo: [https://github.com/CodinGame/SpringChallenge2022](https://github.com/CodinGame/SpringChallenge2022)
-+ PR: [https://github.com/CodinGame/SpringChallenge2022/commit/3e9ed49e82737574d94451673c5f932f67f41fea](https://github.com/CodinGame/SpringChallenge2022/commit/3e9ed49e82737574d94451673c5f932f67f41fea)
+### Bug\#8
++ Resource Type: java.util.Scanner
++ Repository: [SpringChallenge2022](https://github.com/CodinGame/SpringChallenge2022)
++ Pull Request: [3e9ed49e82737574d94451673c5f932f67f41fea](https://github.com/CodinGame/SpringChallenge2022/commit/3e9ed49e82737574d94451673c5f932f67f41fea)
 + File: config/level2/Boss.java
   ```java
       public static void main(String args[]) {
@@ -332,9 +340,10 @@ The details of the 12 bugs are as follows:
         }
     }
   ```
-### \#9. Resource Type: org.apache.http.impl.client.CloseableHttpClient;  java.io.BufferedReader 
-+ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
-+ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e9f231313247bb61fe544b8863b6da24ea95b23e](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e9f231313247bb61fe544b8863b6da24ea95b23e)
+### Bug\#9
++ Resource Type: org.apache.http.impl.client.CloseableHttpClient;  java.io.BufferedReader 
++ Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ Pull Request: [pull\#4](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e9f231313247bb61fe544b8863b6da24ea95b23e)
 + File: JavaSecurity/CodeReview/JavaSec-Code/SSRF/src/main/java/com/drunkbaby/util/HttpUtils.java
   ```java
       public static String httpClient(String url) {
@@ -363,9 +372,10 @@ The details of the 12 bugs are as follows:
 
   ```
 
-### \#10. Resource Type: com.unboundid.ldap.listener.InMemoryDirectoryServer
-+ Repo: [https://github.com/Drun1baby/JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
-+ PR: [https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/04d35eea5d683ff3302af9819f66d9fa5f87eb23](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/04d35eea5d683ff3302af9819f66d9fa5f87eb23)
+### Bug\#10
++ Resource Type: com.unboundid.ldap.listener.InMemoryDirectoryServer
++ Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
++ Pull Request: [pull\#3](https://github.com/Drun1baby/JavaSecurityLearning/pull/3/commits/04d35eea5d683ff3302af9819f66d9fa5f87eb23)
 + File: JavaSecurity/jndi/JndiCode/JndiRMIServer/src/main/java/JNDIGadgetServer.java
   ```java
      public static void main (String[] args) {
@@ -394,9 +404,10 @@ The details of the 12 bugs are as follows:
   ```
 
 
-### \#11. Resource Type: java.net.Socket
-+ Repo: [https://github.com/apache/doris-manager](https://github.com/apache/doris-manager)
-+ PR: [https://github.com/apache/doris-manager/pull/69/commits/90692505ab5775b9fb1c37c299e58d834623b781](https://github.com/apache/doris-manager/pull/69/commits/90692505ab5775b9fb1c37c299e58d834623b781)
+### Bug\#11
++ Resource Type: java.net.Socket
++ Repository: [doris-manager](https://github.com/apache/doris-manager)
++ Pull Request: [pull\#69](https://github.com/apache/doris-manager/pull/69/commits/90692505ab5775b9fb1c37c299e58d834623b781)
 + File: manager/dm-server/src/main/java/org/apache/doris/stack/util/TelnetUtil.java
   ```java
       public static boolean telnet(String host, int port) {
@@ -421,9 +432,10 @@ The details of the 12 bugs are as follows:
         return isConnected;
     }
   ```
-### \#12. Resource Type: java.io.BufferedReader
-+ Repo: [https://github.com/leoshuncheng/vldbj-trajectory-distance-measures](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures)
-+ PR: [https://github.com/leoshuncheng/vldbj-trajectory-distance-measures/pull/1/commits/6d339a4e3c58e0299a0d77d97ee198c2ea7b3cb9](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures/pull/1/commits/6d339a4e3c58e0299a0d77d97ee198c2ea7b3cb9)
+### Bug\#12
++ Resource Type: java.io.BufferedReader
++ Repository: [vldbj-trajectory-distance-measures](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures)
++ Pull Request: [pull\#1](https://github.com/leoshuncheng/vldbj-trajectory-distance-measures/pull/1/commits/6d339a4e3c58e0299a0d77d97ee198c2ea7b3cb9)
 + File: /JDBCFactory.java
 
   ```java
