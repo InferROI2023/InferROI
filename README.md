@@ -12,13 +12,13 @@ All the research questions are listed as follows.
 ## RQ1: Resource-Oriented Intention Inference
 *InferROI* achieves a precision of 74.6% and a recall of 81.8% in resource-oriented intention inference, indicating its ability to accurately and comprehensively identify intentions within the 172 code snippets.
 
-The results of the intention inference can be found in the [spreadsheet](https://github.com/YIDing-suya/InferROI/tree/main/rq1).
+The results of the intention inference can be found in the [spreadsheet](./rq1-intention-inference.csv).
 
 
 ## RQ2: Resource Leak Detection
 *InferROI* achieves a high bug detection rate of 53.5% and a low false alarm rate of 8.1% on the 86 experimented bugs.
 
-The results of the intention inference can be found in the [spreadsheet](https://github.com/YIDing-suya/InferROI/tree/main/rq2).
+The results of the intention inference can be found in the [spreadsheet](./rq2-leak-detection.csv).
 
 
 ## RQ3: Open-Source Project Scanning
@@ -522,4 +522,6 @@ The details of the 12 bugs are as follows:
 ## RQ4: Ablation Study
 *InferROI* outperforms both GPTLeak and GPTLeak-chain, achieving the highest bug detection rate and the lowest false alarm rate. These findings underscore the effectiveness of *InferROI*'s combination of the LLM-based intention inference and the static analysis in detecting resource leaks. 
 
-The results of the intention inference can be found in the [spreadsheet](https://github.com/YIDing-suya/InferROI/tree/main/rq4).
+The results of GPTLeak and GPTLeak-chain the intention inference can be found in [spreadsheet-gptleak](./rq4-GPTLeak.csv) and [spreadsheet-gptleak-chain](./rq4-GPTLeak-chain.csv).
+
+
