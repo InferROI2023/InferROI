@@ -169,7 +169,7 @@ The details of the 12 bugs are as follows:
     }
   ```
 
-### Bug\#6
+### Bug\#6 (PR was accepted)
 + Resource Type: java.sql.Statement
 + Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
 + Pull Request: [pull\#4](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/866739eed18c74c7d04d4aac83f6650c0fdeda8d)
@@ -213,7 +213,7 @@ The details of the 12 bugs are as follows:
     }
   ```
 
-### Bug\#7
+### Bug\#7 (PR was accepted)
 + Resource Type: java.sql.PreparedStatement
 + Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
 + Pull Request: [pull\#4](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e86f052d9ce68069c3e91f9ec043352efe71167e)
@@ -357,7 +357,7 @@ The details of the 12 bugs are as follows:
         }
     }
   ```
-### Bug\#9
+### Bug\#9 (PR was accepted)
 + Resource Type: org.apache.http.impl.client.CloseableHttpClient;  java.io.BufferedReader 
 + Repository: [JavaSecurityLearning](https://github.com/Drun1baby/JavaSecurityLearning)
 + Pull Request: [pull\#4](https://github.com/Drun1baby/JavaSecurityLearning/pull/4/commits/e9f231313247bb61fe544b8863b6da24ea95b23e)
