@@ -4,9 +4,7 @@
 
 
 ## RQ3: Open-Source Project Scanning
-We crawl 115 Java open-source projects with more than 50 stars, which are created after December 31, 2021. The date filtering condition is used to avoid the projects are included in the training data of the employed LLM gpt-4, which is trained using huge amount data up to September, 2021. To save time and the cost of calling the [gpt-4 API](https://platform.openai.com/docs/api-reference), we randomly filter 100 methods from these projects for this evalution, by matching 20 common resource terms, instead of completely scaning these projects. The employed terms are listed as follows: *stream*, *reader*, *client*, *writer*, *lock*, *player, *connection, *monitor, *gzip*, *ftp*, *semaphore*, *mutex*, *stream*, *camera*, *jar*, *buffer*, *latch*, *socket*, *database*, *scanner*, *cursor*.
-
-In the 100 methods, *Infer* reports 16 resource leaks and 12 are annotated as true bugs. We submit PRs for these ture bugs, and 3 of them are confirmed by the project developers and the PRs are accepted.
+In the 100 methods, *InferROI* reports 16 resource leaks and 12 are annotated as true bugs. We submit PRs for these ture bugs, and 3 of them are confirmed by the project developers and the PRs are accepted.
 
 The details of the 12 bugs are as follows:
 
