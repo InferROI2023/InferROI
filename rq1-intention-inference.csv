@@ -1,4 +1,4 @@
-code,valid intentions,gpt intentions
+code,manual intentions,InferROI intentions
 "public int eta(int[] counts, boolean reload) {
         double revYesRate;
         double revTime;
