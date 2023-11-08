@@ -26,7 +26,7 @@ In the 100 methods, *InferROI* reports 16 resource leaks and 12 are annotated as
 
 The details of the 12 bugs are as follows:
 
-### Bug\#1
+### Bug\#1 (PR was accepted)
 + Resource Type: dogfight_Z.dogLog.utils.JDBCConnection
 + Repository: [open-java](https://github.com/PointRider/open-java)
 + Pull Request: [pull\#2](https://github.com/PointRider/open-java/pull/2/commits/601f2e8a6a007b1fd575137423686fab82bec838)
